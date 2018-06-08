@@ -16,5 +16,5 @@ firebase.initializeApp({
     databaseURL: "https://nexmo-app.firebaseio.com"
 });
 var fireDB =firebase.database()
-require('./app/route/routes.js')(app,fireDB); // load our routes and pass in our app and fully configured passport
+require('./route/smsroutes')(app,fireDB); // load our routes and pass in our app and fully configured passport
 app.listen(port);
